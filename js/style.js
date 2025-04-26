@@ -29,27 +29,30 @@ setInterval(function() {
 }, 200);
 
 
+
 let timer;
 let isRunning = false;
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
 
-// htmlから要素の取得
-const timerElement = document.addEventListener("timer") ;
-const start = document.addEventListener("start");
-const reset = document.addEventListener("reset");
+//htmlから要素の取得
+const timerElement = document.getElementById('timer');
+const start = document.getElementById('start');
+const reset = document.getElementById('reset');
 
-start.addEventListener("click",()=>{
+start.addEventListener('click',() => {
     if(isRunning){
-        // タイマーが起動していない状態
+        //タイマーが起動していない状態
         clearInterval(timer);
-        start.textContent = "start";
+        start.textContent = 'start';
     }else{
-        // タイマーが起動している時
+        //タイマーが起動している状態
         timer = setInterval(updateTimer,10);
-        start.textContent = "stop"
+        start.textContent = 'stop';
     }
+    isRunning = !isRunning;
+
 });
 
 //resetボタンが押された時の関数設定
