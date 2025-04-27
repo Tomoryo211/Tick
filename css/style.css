@@ -76,3 +76,8 @@ body{
     background: #f8a5f6;
     transform: scale(1.1);
 }
+.remain{
+    text-align: center;
+    color: #f8a5f6;
+    border-bottom: 2px solid #fcfcfc;
+}
