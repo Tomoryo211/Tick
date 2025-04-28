@@ -61,6 +61,7 @@ body{
     border: 5px solid #ff7efd ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-left: 10px;
 }
 .btn{
     padding: 10px 20px;
@@ -78,6 +79,7 @@ body{
 }
 .remain{
     text-align: center;
+    margin-top: 20px;
     color: #f8a5f6;
     border-bottom: 2px solid #fcfcfc;
 }
