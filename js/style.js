@@ -86,3 +86,5 @@ function resetTimer(){
     timerElement.textContent = '00:00:00'
     start.textContent = 'start';
 }
+
+
