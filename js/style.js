@@ -1,4 +1,6 @@
 
+
+// 背景のアニメーション
 // .view
 const viewArea = document.querySelector(".view");
 //.btn_start
@@ -87,4 +89,15 @@ function resetTimer(){
     start.textContent = 'start';
 }
 
+// wrapボタンを取得
+const wrap = document.getElementById('wrap');
+// ラップタイムを表示するエリアを取得
+const wrapList = document.getElementById('wrap_list');
 
+// wrapボタンを押した時の処理
+wrap.addEventListener('click', function() {
+    const lapTime = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(seconds);
+    const lapItem = document.createElement('li');
+    lapItem.textContent = lapTime;
+    wrapList.appendChild(lapItem);
+});
